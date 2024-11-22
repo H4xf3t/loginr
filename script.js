@@ -1,6 +1,8 @@
 // Importa y configura Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+import bcrypt from "https://cdn.jsdelivr.net/gh/dcodeIO/bcrypt.js/dist/bcrypt.min.js"; // Importa bcrypt para hashing
 
 // Configuración de Firebase
   const firebaseConfig = {
